@@ -6,8 +6,10 @@ Oracle Cloud Infrastructure REST APIs implemented in node.js to list, and update
 
 ## Prerequisites:
 
-- Make sure that you have an Autonomous Database up and running.  
-- Make sure that you have nodejs configured in your machine.
+- Make sure that you have an Autonomous Database up and running.    
+- Make sure that you have nodejs configured in your machine.  
+- Clone the repository: 
+   **git clone https://github.com/austindatamanagement/nodejs_autonomousDB.git**
 
 ## Change the following parameters:
 
