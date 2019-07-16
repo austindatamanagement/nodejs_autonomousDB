@@ -31,7 +31,7 @@ Navigate to test.js and change a few parameters:
   
   Follow the steps below to get your tenancy OCID:
      
-     - Navigate to the profile on the top right of your Cloud Account and click on "Tenancy".
+    - Navigate to the profile on the top right of your Cloud Account and click on "Tenancy".
      
        ![](profile.png)
      
@@ -80,6 +80,15 @@ Navigate to test.js and change a few parameters:
 
   1. **compartmentId** : your compartment OCID.
   
+      - Navigate to "Identity" -> "Compartment"
+      
+      ![](navigate.png)
+      
+      - Click on your compartment and copy the OCID> 
+      
+      ![](com.png)
+      
+      
 See the test.js and files in the examples directory for other examples of how to setup the auth an how to call/use the API.
 
 ## Run the script.
