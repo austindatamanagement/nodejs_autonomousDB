@@ -7,7 +7,9 @@ Oracle Cloud Infrastructure REST APIs implemented in node.js to list, and update
 ## Prerequisites:
 
 - Make sure that you have an Autonomous Database up and running.    
-- Make sure that you have nodejs configured in your machine.  
+- Make sure that you have nodejs configured in your machine.
+- Follow this document to Generate an API Signing Key and to upload the Public Keys in User profile . 
+  https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.html . 
 - Clone the repository: 
    **git clone https://github.com/austindatamanagement/nodejs_autonomousDB.git**
 
@@ -27,19 +29,42 @@ Navigate to test.js and change a few parameters:
   
   1. **tenancyId** : Your Tenancy OCID. 
   
-     Follow the steps below to get your tenancy OCID:
+  Follow the steps below to get your tenancy OCID:
      
-     Navigate to the profile on the top right of your Cloud Account and click on "Tenancy".
+     - Navigate to the profile on the top right of your Cloud Account and click on "Tenancy".
      
-     ![](profile.png)
+       ![](profile.png)
      
-     Copy the OCID
+     - Copy the OCID
      
-     ![](tenancy.png)
+       ![](tenancy.png)
      
   2. **userID** : Your user OCID. 
-  3. **keyFingerprint** : Your key fingerprint which is generated while creating private key.  
+  
+  Follow the steps below to get your tenancy OCID:
+  
+     - Navigate to the profile on the top right of your Cloud Account and click on your profile name.
+     
+       ![](profile.png)
+       
+     - Copy the OCID. 
+     
+       ![](user.png)
+       
+  
+  3. **keyFingerprint** : 
+  
+     You can get the key's fingerprint with the following OpenSSL command. If you're using Windows, you'll need to install Git Bash for Windows and run the command with that tool . 
+
+     openssl rsa -pubout -outform DER -in ~/.oci/oci_api_key.pem | openssl md5 -c
+
+     When you upload the public key in the Console, the fingerprint is also automatically displayed there. It looks something like this: 12:34:56:78:90:ab:cd:ef:12:34:56:78:90:ab:cd:ef 
+  
   4. **region** : Region where your autonomous database instance is up and running.   
+  
+     To get the region, navigate to the top right of your Cloud Console. 
+     
+     ![](region.png)
 
 - Change the following in this part of the code:  
   
