@@ -28,9 +28,7 @@ Navigate to test.js and change a few parameters:
   };**  
   
   1. **tenancyId** : Your Tenancy OCID. 
-  
-  Follow the steps below to get your tenancy OCID:
-     
+    
     - Navigate to the profile on the top right of your Cloud Account and click on "Tenancy".
      
        ![](profile.png)
@@ -56,6 +54,10 @@ Navigate to test.js and change a few parameters:
   
      You can get the key's fingerprint with the following OpenSSL command. If you're using Windows, you'll need to install Git Bash for Windows and run the command with that tool . 
 
+     openssl rsa -pubout -outform DER -in {Path to your PEM file} | openssl md5 -c
+
+     My .pem file is in ~/.oci, so my command is :
+     
      openssl rsa -pubout -outform DER -in ~/.oci/oci_api_key.pem | openssl md5 -c
 
      When you upload the public key in the Console, the fingerprint is also automatically displayed there. It looks something like this: 12:34:56:78:90:ab:cd:ef:12:34:56:78:90:ab:cd:ef 
@@ -84,7 +86,7 @@ Navigate to test.js and change a few parameters:
       
       ![](navigate.png)
       
-      - Click on your compartment and copy the OCID> 
+      - Click on your compartment and copy the OCID 
       
       ![](com.png)
       
@@ -97,7 +99,7 @@ Now run the script by typing the following:
 
 **node test.js** 
 
-you should be able to see all the autonomous database running in your instance. 
+you should be able to see the list of the autonomous database running in your instance. 
 
 ## Update your autonomous instance. 
 
