@@ -39,8 +39,6 @@ Navigate to test.js and change a few parameters:
      
   2. **userID** : Your user OCID. 
   
-  Follow the steps below to get your tenancy OCID:
-  
      - Navigate to the profile on the top right of your Cloud Account and click on your profile name.
      
        ![](profile.png)
