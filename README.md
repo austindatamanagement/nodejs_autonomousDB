@@ -26,6 +26,16 @@ Navigate to test.js and change a few parameters:
   };**  
   
   1. **tenancyId** : Your Tenancy OCID. 
+  
+     Follow the steps below to get your tenancy OCID:
+     
+     Navigate to the profile on the top right of your Cloud Account and click on "Tenancy".
+     
+     
+     
+     Copy the OCID
+     
+     
   2. **userID** : Your user OCID. 
   3. **keyFingerprint** : Your key fingerprint which is generated while creating private key.  
   4. **region** : Region where your autonomous database instance is up and running.   
