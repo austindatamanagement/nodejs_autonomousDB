@@ -31,10 +31,11 @@ Navigate to test.js and change a few parameters:
      
      Navigate to the profile on the top right of your Cloud Account and click on "Tenancy".
      
-     
+     ![](profile.png)
      
      Copy the OCID
      
+     ![](tenancy.png)
      
   2. **userID** : Your user OCID. 
   3. **keyFingerprint** : Your key fingerprint which is generated while creating private key.  
