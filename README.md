@@ -17,7 +17,7 @@ Oracle Cloud Infrastructure REST APIs implemented in node.js to list, and update
 
 After cloning the Git repository, navigate to nodejs_autonomousDB folder and then to test.js file. Open it to edit. 
 
-- Change the following in this part of the code: 
+- **Change the following in this part of the code:**
 
   **var auth={  
       tenancyId : 'ocid1.tenancy.oc1..aaaaaaaa3hjb76kw5fmhm6y4tcl5whv2uer6fz2bbfctfxvbdrtwddfdo6qq',  
@@ -66,18 +66,13 @@ After cloning the Git repository, navigate to nodejs_autonomousDB folder and the
      
      ![](region.png)
 
-- Change the following in this part of the code:  
+- **Change the following in this part of the code:**
   
   **auth.privateKey = fs.readFileSync('path to your .pem', 'ascii');**
 
-  1. **path to your .pem** : Change this to the path of your private key .pem.  
+  1. **path to your .pem** : Change this to the path of your private key .pem.
   
-  My .pem file is in ~/.oci, so my command is :
-  
-  **auth.privateKey = fs.readFileSync('path to your .pem', 'ascii');**
-  
-  
-- Change the following in this part of the code:  
+- **Change the following in this part of the code:**
 
 **var parameters = {    
    compartmentId : 'ocid1.tenancy.oc1..aaaaaaaa3hjb76kw5fmhm6y4tcl5whv2uer6fz2bbfctfxvbdrtwddfdo6qq'  
