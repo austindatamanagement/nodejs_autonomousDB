@@ -28,16 +28,16 @@ After cloning the Git repository, navigate to nodejs_autonomousDB folder and the
   };**  
   
   1. **tenancyId** : Your Tenancy OCID. 
-    
+  
     - Navigate to the profile on the top right of your Cloud Account and click on "Tenancy".
      
        ![](profile.png)
-     
-     - Copy the OCID
+       
+    - Copy the OCID
      
        ![](tenancy.png)
-     
-  2. **userID** : Your user OCID. 
+       
+   2. **userID** : Your user OCID. 
   
      - Navigate to the profile on the top right of your Cloud Account and click on your profile name.
      
@@ -46,7 +46,6 @@ After cloning the Git repository, navigate to nodejs_autonomousDB folder and the
      - Copy the OCID. 
      
        ![](user.png)
-       
   
   3. **keyFingerprint** : 
   
