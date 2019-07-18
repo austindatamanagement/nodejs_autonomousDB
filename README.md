@@ -9,7 +9,7 @@ Oracle Cloud Infrastructure REST APIs implemented in node.js to list, and update
 - Make sure that you have an Autonomous Database up and running.    
 - Make sure that you have nodejs configured in your machine.
 - Follow this document to Generate an API Signing Key and to upload the Public Keys in User profile . 
-  https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.html . 
+  https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm 
 - Clone the repository: 
    **git clone https://github.com/austindatamanagement/nodejs_autonomousDB.git**
 
