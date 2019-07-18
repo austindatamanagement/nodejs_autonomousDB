@@ -27,6 +27,7 @@ After cloning the Git repository, navigate to nodejs_autonomousDB folder and the
       region: 'eu-frankfurt-1'  
   };**  
   
+  
   1. **tenancyId** : Your Tenancy OCID. 
   
     - Navigate to the profile on the top right of your Cloud Account and click on "Tenancy".
