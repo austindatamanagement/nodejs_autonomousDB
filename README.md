@@ -74,9 +74,7 @@ After cloning the Git repository, navigate to nodejs_autonomousDB folder and the
   
 - **Change the following in this part of the code:**
 
-**var parameters = {    
-   compartmentId : 'ocid1.tenancy.oc1..aaaaaaaa3hjb76kw5fmhm6y4tcl5whv2uer6fz2bbfctfxvbdrtwddfdo6qq'  
-};**  
+  **var parameters = {compartmentId : 'ocid1.tenancy.oc1..aaaaaaaa3hjb76kw5fmhm6y4tcl5whv2uer6fz2bbfctfxvbdrtwddfdo6qq'};**  
 
   1. **compartmentId** : your compartment OCID.
   
@@ -89,7 +87,7 @@ After cloning the Git repository, navigate to nodejs_autonomousDB folder and the
       ![](com.png)
       
       
-See the test.js and files in the examples directory for other examples of how to setup the auth an how to call/use the API.
+   See the test.js and files in the examples directory for other examples of how to setup the auth an how to call/use the API.
 
 ## **STEP 2**: Run the script.
 
