@@ -56,7 +56,7 @@ After cloning the Git repository, navigate to nodejs_autonomousDB folder and the
 
      My .pem file is in ~/.oci, so my command is :
      
-        ![](commandfp1.png)
+        ![](commandfp2.png)
 
      When you upload the public key in the Console, the fingerprint is also automatically displayed there. It looks something like this: 12:34:56:78:90:ab:cd:ef:12:34:56:78:90:ab:cd:ef 
   
