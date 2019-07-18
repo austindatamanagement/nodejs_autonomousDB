@@ -8,8 +8,6 @@ Oracle Cloud Infrastructure REST APIs implemented in node.js to list, and update
 
 - Make sure that you have an Autonomous Database up and running.    
 - Make sure that you have nodejs configured in your machine.
-- Follow this document to Generate an API Signing Key and to upload the Public Keys in User profile . 
-  https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm 
 - Clone the repository: 
    **git clone https://github.com/austindatamanagement/nodejs_autonomousDB.git**
 
@@ -48,17 +46,22 @@ After cloning the Git repository, navigate to nodejs_autonomousDB folder and the
      
        ![](user.png)
   
-  3. **keyFingerprint** : 
+  3. **keyFingerprint** . 
   
-     You can get the key's fingerprint with the following OpenSSL command. If you're using Windows, you'll need to install Git Bash for Windows and run the command with that tool . 
-
-        ![](commandfp.png)
-
-     My .pem file is in ~/.oci, so my command is :
+     In order to get KeyFingerprint, you will first have to upload your public key in User profile. 
      
-        ![](commandfp2.png)
+     - Follow this document to Generate an API Signing Key and to upload the Public Keys in User profile. 
+  https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm
+  
+     - You can get the key's fingerprint with the following OpenSSL command. If you're using Windows, you'll need to install Git Bash for Windows and run the command with that tool . 
 
-     When you upload the public key in the Console, the fingerprint is also automatically displayed there. It looks something like this: 12:34:56:78:90:ab:cd:ef:12:34:56:78:90:ab:cd:ef 
+       ![](commandfp.png)
+
+       My .pem file is in ~/.oci, so my command is :
+     
+       ![](commandfp2.png)
+
+       When you upload the public key in the Console, the fingerprint is also automatically displayed there. It looks something like this: 12:34:56:78:90:ab:cd:ef:12:34:56:78:90:ab:cd:ef 
   
   4. **region** : Region where your autonomous database instance is up and running.   
   
