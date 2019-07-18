@@ -68,9 +68,14 @@ After cloning the Git repository, navigate to nodejs_autonomousDB folder and the
 
 - Change the following in this part of the code:  
   
-  **auth.privateKey = fs.readFileSync('path to your .pem', 'ascii');  **
+  **auth.privateKey = fs.readFileSync('path to your .pem', 'ascii');**
 
   1. **path to your .pem** : Change this to the path of your private key .pem.  
+  
+  My .pem file is in ~/.oci, so my command is :
+  
+  **auth.privateKey = fs.readFileSync('path to your .pem', 'ascii');**
+  
   
 - Change the following in this part of the code:  
 
@@ -101,7 +106,7 @@ you should be able to see the list of the autonomous database running in your in
 
 ## **STEP 3** Update your autonomous instance. 
 
-This step will update the autonomous instance through rest API. We will add tags to the existing autonomous instance.
+This step will update the autonomous instance through rest API. We will add tags to the existing autonomous database instance.
 
 In order to do so, uncomment the following part of the code:
 
