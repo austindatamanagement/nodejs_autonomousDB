@@ -41,7 +41,7 @@ After cloning the Git repository, navigate to nodejs_autonomousDB folder and the
   
      - Navigate to the profile on the top right of your Cloud Account and click on your profile name.
      
-       ![](profile.png)
+       ![](pro.png)
        
      - Copy the OCID. 
      
