@@ -13,9 +13,9 @@ Oracle Cloud Infrastructure REST APIs implemented in node.js to list, and update
 - Clone the repository: 
    **git clone https://github.com/austindatamanagement/nodejs_autonomousDB.git**
 
-## Change the following parameters:
+## **STEP 1**: Change some parameters as per your environment in the code.
 
-Navigate to test.js and change a few parameters:
+After cloning the Git repository, navigate to nodejs_autonomousDB folder and then to test.js file. Open it to edit. 
 
 - Change the following in this part of the code: 
 
@@ -91,7 +91,7 @@ Navigate to test.js and change a few parameters:
       
 See the test.js and files in the examples directory for other examples of how to setup the auth an how to call/use the API.
 
-## Run the script.
+## **STEP 2**: Run the script.
 
 Now run the script by typing the following:
 
@@ -99,9 +99,11 @@ Now run the script by typing the following:
 
 you should be able to see the list of the autonomous database running in your instance. 
 
-## Update your autonomous instance. 
+## **STEP 3** Update your autonomous instance. 
 
-Uncomment the following part of the code:
+This step will update the autonomous instance through rest API. We will add tags to the existing autonomous instance.
+
+In order to do so, uncomment the following part of the code:
 
 **var tags = { "freeformTags" : {"tag1": 123456, "tag2": "yyy", "anotherTag": "aaa" }};  
   parameters = {  
